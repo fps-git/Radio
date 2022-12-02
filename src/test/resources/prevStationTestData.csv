@@ -1,0 +1,4 @@
+Name of the test,Station number,Expected value
+first,10,9
+second,4,3
+min,0,9
