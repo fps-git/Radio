@@ -1,4 +1,5 @@
-Name of the test,Station number,Expected value
-first,10,9
-second,4,3
-min,0,9
+Name of the test,Number of stations,Station number,Expected value
+valid,200,10,9
+min,200,0,199
+invalid,-3,15,9
+more1000,1001,1000,999
