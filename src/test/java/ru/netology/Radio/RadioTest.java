@@ -6,8 +6,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 class RadioTest {
-
-
     @Test
     public void zeroNumberOfStationsSettingLimitsTest() {
         Radio radio = new Radio(0);
@@ -27,6 +25,7 @@ class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
 
     @ParameterizedTest
     @CsvFileSource(resources = "/stationFlexibleTestData.csv", numLinesToSkip = 1)

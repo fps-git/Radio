@@ -1,15 +1,17 @@
 package ru.netology.Radio;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@Getter
 public class Radio {
-    private int numberOfStations = 10;
-    private int minVolumeLevel = 0;
-    private int maxVolumeLevel = 100;
+    private int numberOfStations;
+    private final int minVolumeLevel = 0;
+    private final int maxVolumeLevel = 100;
     private int stationNumber;
     private int volumeLevel = 1; //Зададим значение громкости по умолчанию при включении радио
 
-    public Radio(){
-
-    }
     public Radio(int numberOfStations) {
         //Ограничим максимальное количество станций осмысленным числом с запасом
         if (numberOfStations > 1 && numberOfStations <= 1000) {
@@ -20,15 +22,7 @@ public class Radio {
             } else {
                 this.numberOfStations = 1000; //Если будет задано больше 1000 то установим 1000
             }
-
         }
-    }
-    public int getNumberOfStations() {
-        return numberOfStations;
-    }
-
-    public int getStationNumber() {
-        return stationNumber;
     }
 
     public void setStationNumber(int stationNumber) {
@@ -55,10 +49,6 @@ public class Radio {
         } else {
             setStationNumber(stationNumber - 1);
         }
-    }
-
-    public int getVolumeLevel() {
-        return volumeLevel;
     }
 
     public void setVolumeLevel(int volumeLevel) {
