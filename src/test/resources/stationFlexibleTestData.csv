@@ -1,0 +1,8 @@
+Name of the test,Number of stations,Station number,Expected value
+Close minimum,100,1,1
+Minimum,100,0,0
+Under limit,100,-1,0
+Close maximum,100,98,98
+Maximum,100,99,99
+Over limit,100,100,0
+invalid,1001,1000,0

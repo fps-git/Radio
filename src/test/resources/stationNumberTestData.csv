@@ -1,7 +1,0 @@
-Name of the test,Station number,Expected value
-Close minimum,1,1
-Minimum,0,0
-Under limit,-1,0
-Close maximum,8,8
-Maximum,9,9
-Over limit,10,0

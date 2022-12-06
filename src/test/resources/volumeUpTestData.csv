@@ -1,4 +1,4 @@
 Name of the test,Volume level,Expected value
 first,0,1
 second,5,6
-max,10,10
+max,100,100
